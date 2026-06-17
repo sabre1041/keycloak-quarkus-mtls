@@ -37,7 +37,7 @@ jobs:
       - name: Obtain Quay Auth Token
         id: quay-auth
         if: github.event_name != 'pull_request'
-        uses: sabre1041/quay-oidc-auth-action@main
+        uses: sabre1041/quay-oidc-auth-action@v1
         with:
           username: ${{ secrets.IMAGE_REGISTRY_USERNAME }}
 
